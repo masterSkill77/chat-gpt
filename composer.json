@@ -7,7 +7,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Masterskill\\ChatGpt\\": "src/"
+            "Masterskill\\ChatGpt\\": "src"
         }
     },
     "authors": [
