@@ -1,21 +1,21 @@
 {
-    "name": "masterskill/chat-gpt",
-    "description": "This is an extension of beautifull package that is 'orhanerday/open-ai'",
-    "type": "library",
-    "require": {
-        "orhanerday/open-ai": "dev-main"
-    },
-    "autoload": {
-        "psr-4": {
-            "Masterskill\\ChatGpt\\": "src"
-        }
-    },
-    "authors": [
-        {
-            "name": "Clairmont RAJAONARISON",
-            "email": "clairmont.rajaonarison@gmail.com"
-        }
-    ],
-    "license": "GPL-1.0-only",
-    "minimum-stability": "dev"
+  "name": "masterskill/chat-gpt",
+  "description": "This is an extension of beautifull package that is 'orhanerday/open-ai'",
+  "type": "library",
+  "require": {
+    "orhanerday/open-ai": "dev-main"
+  },
+  "autoload": {
+    "psr-4": {
+      "Masterskill\\Chatgpt\\": "src"
+    }
+  },
+  "authors": [
+    {
+      "name": "Clairmont RAJAONARISON",
+      "email": "clairmont.rajaonarison@gmail.com"
+    }
+  ],
+  "license": "GPL-1.0-only",
+  "minimum-stability": "dev"
 }

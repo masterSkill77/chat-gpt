@@ -1,6 +1,6 @@
 <?php
 
-namespace MasterSkill\ChatGpt;
+namespace Masterskill\Chatgpt;
 
 class OpenAi
 {
