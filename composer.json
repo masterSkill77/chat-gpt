@@ -3,7 +3,7 @@
   "description": "This is an extension of beautifull package that is 'orhanerday/open-ai'",
   "type": "library",
   "require": {
-    "php": ">=7.4",
+    "php": ">=8.0",
     "ext-curl": "*",
     "ext-json": "*"
   },
