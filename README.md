@@ -4,7 +4,7 @@
 
 # Documentation
 
-# How to initialize the package
+## How to initialize the package
 
 You need to instaciate the OpenAi class
 
@@ -20,3 +20,5 @@ Instanctiate class
 
 Ex : get all available models
 `$response = $openAi->models()`
+
+# Documentation
