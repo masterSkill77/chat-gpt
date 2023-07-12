@@ -6,24 +6,17 @@ use Exception;
 
 class OpenAi
 {
-    private $baseUrl = "https://api.openai.com/v1/";
-    private $apiKey;
-    private $model;
-    public function __construct(string $apiKey, $model)
+    protected $models;
+    public function __construct(protected string $apiKey)
     {
-        $this->apiKey = $apiKey;
-    }
-    protected function initiateCurl($url = "")
-    {
-        $curl = curl_init();
-        curl_setopt($curl, CURLOPT_URL, $this->baseUrl . $url);
-        curl_setopt($curl, CURLOPT_HEADER, TRUE);
-        curl_setopt($curl, CURLOPT_HTTPHEADER, array("Authorization: Bearer " . $this->apiKey));
-        curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
-        return curl_exec($curl);
+        $this->models = new Model($apiKey);
     }
     public function models()
     {
-        return $this->initiateCurl("models");
+        return $this->models->getModels();
+    }
+    public function getModel(string $model)
+    {
+        return $this->models->getModel($model);
     }
 }
