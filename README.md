@@ -21,4 +21,11 @@ Instanctiate class
 Ex : get all available models
 `$response = $openAi->models()`
 
-# Documentation
+## How to use it
+
+#### Models
+
+- Retrieve all models
+``$openAi->models()``
+- Retrieve one model
+``$openAi->getModel($modelName)``
